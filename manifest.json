@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "npreddit",
+  "version": "1.0",
+
+  "description": "Redirects reddit links",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["npreddit.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
